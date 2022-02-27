@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>ros2_pkg</name>
+  <name>uros_pkg</name>
   <version>0.0.0</version>
-  <description>ROS2 show case für Pico-SDK problem</description>
+  <description>Micro-ROSshow case für Pico-SDK problem</description>
   <maintainer email="stephan.kunz@kabelbw.de">stepkun</maintainer>
   <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <depend>test_interfaces</depend>
+
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
-
-  <depend>test_interfaces</depend>
 
   <export>
     <build_type>ament_cmake</build_type>
