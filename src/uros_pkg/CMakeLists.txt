@@ -1,5 +1,11 @@
 cmake_minimum_required(VERSION 3.12)
 
+# avoid error message regarding symlink-install
+set(ignoreMe "${AMENT_CMAKE_SYMLINK_INSTALL}")
+set(PICO_PLATFORM "rp2040")
+set(PICO_BOARD "pico")
+set(PICO_COMPILER "pico_arm_gcc")
+
 include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
 project(uros_pkg C CXX ASM)
